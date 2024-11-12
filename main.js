@@ -67,8 +67,7 @@ class WaveScene {
                 uTime: { value: 0 },
                 resolution: { value: new THREE.Vector2(1, 1) }
             },
-            transparent: true,
-            blending: THREE.AdditiveBlending
+            transparent: true
         });
         
         this.hiddenScene = new THREE.Scene();
@@ -92,7 +91,6 @@ class WaveScene {
                 tDiffuse: { value: this.renderTarget.texture }
             },
             transparent: true,
-            blending: THREE.AdditiveBlending,
             side: THREE.DoubleSide
         });
         
